@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijayasree's Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(45deg, #ff7f50, #ff6347);
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #ff7f50;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff6347;
+        }
+
+        /* Welcome Section */
+        #welcome {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #e91e63;
+            color: white;
+        }
+
+        #welcome h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        #welcome p {
+            font-size: 1.2rem;
+        }
+
+        /* About Section */
+        #about {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        #about h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #e91e63;
+        }
+
+        #about .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #about img {
+            width: 180px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid #ff7f50;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            max-width: 600px;
+            line-height: 1.8;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        #portfolio h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff6347;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #ff7f50;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 3px solid #ff6347;
+        }
+
+        .portfolio-item h3 {
+            text-align: center;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 50px 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        #contact a {
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact a:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            nav {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            #about .content {
+                flex-direction: column;
+            }
+
+            #about img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Vijayasree</h1>
+        <h2>Student at Bannari Amman Institute of Technology</h2>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#welcome">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I'm Vijayasree, a passionate student at Bannari Amman Institute of Technology, aspiring to become a successful web developer.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="content">
+            <img src="https://via.placeholder.com/180" alt="Profile Picture">
+            <p>Hello! I'm Vijayasree, currently pursuing my degree at Bannari Amman Institute of Technology. I love learning about web development and creating beautiful, functional websites. My goal is to continuously improve my skills and explore new technologies in the web development world.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400" alt="Project 1">
+                <h3>Project 1</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400" alt="Project 2">
+                <h3>Project 2</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400" alt="Project 3">
+                <h3>Project 3</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to connect, feel free to reach out!</p>
+        <a href="mailto:vijayasree@example.com">Send me an email</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Vijayasree. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
